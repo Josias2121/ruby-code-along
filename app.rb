@@ -3,12 +3,8 @@ require_relative 'config/environment'
 class App < Sinatra::Base
 
   get '/' do 
-  erb :index
+  erb :dashboard
   end
-  post '/' do
-    @user = {
-      name: "#{params["frame"]} #{params["lname"]}"
    
-      erb :results
   
 end
